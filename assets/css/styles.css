@@ -1,0 +1,309 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    color: #4D4D4D;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    font-display: swap;
+    line-height: normal;
+}
+.container{
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+h2{
+    font-weight: bold;
+    color: #02349C;
+    font-size: 34px;
+}
+p{
+    font-size: 16px;
+}
+/************************************
+BOTONES  
+************************************/
+.botones{
+    padding: 30px;
+    justify-content: space-around;
+    display: flex;
+}
+.btn-meta{
+    color: #ffffff;
+    background-color: #02349C;
+    border-radius: 14px;
+    border: 0;
+    padding: 10px;
+    width: 160px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-meta img{
+    width: 30px;
+    height: auto;
+    padding-right: 20px;
+}
+.btn-meta a{
+    margin: 0;
+    text-align: justify;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.btn-meta i{
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+/************************************
+TABLAS  
+************************************/
+
+
+
+/************************************
+GIS
+************************************/
+.consulta{
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+    height: 750px;
+    background: url(../img/gis/fondo1.png) no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+}
+.consulta h2{
+    text-align: left;
+}
+.info-consulta{
+    width: 100%;
+    text-align: left;
+    padding: 0 20%;
+    top: 20px;
+    margin: 0;
+}
+.info-consulta h2{
+    color: #FFBD00;
+    font-size: 34px;
+}
+.gis{
+    max-width: 330px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: fit-content;
+}
+.gis img{
+    padding: 10px;
+    height: fit-content;
+}
+@media screen and (max-width: 905px){
+    .laptop{
+        visibility: hidden;
+    }
+}
+
+
+/************************************
+SERVICIOS
+************************************/
+.servicio-container{
+    text-align: justify; 
+    padding: 50px 10px;
+    padding-bottom: 0;
+    justify-content: center;
+}
+.servicio-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.servicio-titulo h2{
+    text-align: left;
+    color: #02349C;
+}
+.servicio-titulo img{
+    width: auto;
+    height: fit-content;
+    padding-right: 10px;
+}
+.servicios{
+   text-align: justify; 
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+.servicios img{
+    width: 100%;
+    max-width: 380px;
+}
+.tabla-servicio{
+    max-width: 600px;
+    width: 100%;
+}
+
+
+/************************************
+METADATOS   
+************************************/
+.metadatos-container{
+    text-align: justify; 
+    padding: 50px 10px;
+    padding-bottom: 0;
+    justify-content: center;
+}
+.metadatos-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.metadatos-titulo h2{
+    text-align: left;
+    color: #02349C;
+}
+.metadatos-titulo img{
+    width: auto;
+    height: fit-content;
+    padding-right: 10px;
+}
+.metadatos{
+    text-align: justify; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.tabla-metadatos{
+    max-width: 600px;
+    width: 100%;
+}
+
+/************************************
+NORMAS  
+************************************/
+.normas-container{
+    text-align: justify; 
+    padding: 50px 10px;
+    padding-bottom: 0;
+    justify-content: center;
+}
+.normas-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.normas-titulo h2{
+    text-align: left;
+    color: #02349C;
+}
+.normas-titulo img{
+    width: auto;
+    height: fit-content;
+    padding-right: 10px;
+}
+.normas{
+   text-align: justify; 
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+.tabla-normas{
+    max-width: 600px;
+    width: 100%;
+}
+
+
+/************************************
+capas  
+************************************/
+.capas-container{
+    text-align: justify; 
+    padding: 50px 10px;
+    padding-bottom: 0;
+    justify-content: center;
+}
+.capas-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.capas-titulo h2{
+    text-align: left;
+    color: #02349C;
+}
+.capas-titulo img{
+    width: auto;
+    height: fit-content;
+    padding-right: 10px;
+}
+.capas{
+   text-align: justify; 
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+.tabla-capas{
+    max-width: 600px;
+    width: 100%;
+}
+
+/************************************
+GEO
+************************************/
+.geo-container{
+    text-align: justify; 
+    padding: 70px 10px;
+    justify-content: center;
+}
+.geo-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.geo-titulo img{
+    width: auto;
+    height: fit-content;
+    padding-right: 10px;
+}
+.geo{
+   text-align: justify; 
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+.tabla-geo{
+    max-width: 600px;
+    width: 100%;
+}
+
+/************************************
+FOOTER
+************************************/
+footer{
+    background-color: #51464B;
+    padding: 20px;
+}
+footer p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+}
+.logos img{
+    width: 200px;
+    height: auto;
+}
