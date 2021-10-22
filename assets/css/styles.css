@@ -80,6 +80,7 @@ BOTONES
 TABLAS  
 ************************************/
 table{
+
     width: 100%;
     border-collapse:collapse;
     
@@ -145,23 +146,6 @@ table{
 .lines a p{
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*header*/
 .fondo{
