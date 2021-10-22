@@ -18,6 +18,7 @@ body{
     flex-wrap: wrap;
     margin: auto;
 }
+
 h2{
     font-weight: bold;
     color: #02349C;
@@ -26,11 +27,15 @@ h2{
 p{
     font-size: 16px;
 }
+img{
+    height: fit-content;
+}
 /************************************
 BOTONES  
 ************************************/
 .botones{
     padding: 30px;
+    padding-bottom: 0;
     justify-content: space-around;
     display: flex;
 }
@@ -66,7 +71,67 @@ BOTONES
 /************************************
 TABLAS  
 ************************************/
+table{
+    width: 100%;
+    border-collapse:collapse;
+    
+}
+.cabecera{
+    background-color: #02349C;
+    border-radius: 20px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+.cabecera td{
+    padding: 0 10px;
+}
+.body{
+    display: block;
+    padding: 10px 0;
+}
+.body tr td{
+    padding: 2px;
+}
+.cat{
+    width: 27%;
+}
+.cat p{
+    text-align: center;
+}
+.line{
+    width: 100%;
+    border-bottom: #02349C 1px solid;
 
+}
+.lines a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.lines p{
+    margin: 0;
+}
+.cat1{
+    width: 45%;
+    text-align: center;
+}
+.extra{
+    padding-right: 50px;
+}
+.lines a:hover{
+    color: #4D4D4D;
+}
+.lines a:visited{
+    color: #4D4D4D;
+}
+.lines a img{
+    width: 20px;
+    padding-right: 10px;
+}
+.lines a p{
+    margin: 0;
+}
 
 
 /************************************
@@ -111,6 +176,7 @@ GIS
 @media screen and (max-width: 905px){
     .laptop{
         visibility: hidden;
+        height: 0;
     }
 }
 
@@ -139,22 +205,33 @@ SERVICIOS
     padding-right: 10px;
 }
 .servicios{
-   text-align: justify; 
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: center;
-}
-.servicios img{
-    width: 100%;
-    max-width: 380px;
+    text-align: justify; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
 }
 .tabla-servicio{
     max-width: 600px;
     width: 100%;
 }
-
-
+.laptop2 img{
+    width: 100%;
+    max-width: 350px;
+}
+@media screen and (max-width: 905px){
+    .laptop2{
+        visibility: hidden;
+        height: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .servicio-container{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+}
 /************************************
 METADATOS   
 ************************************/
@@ -189,7 +266,12 @@ METADATOS
     max-width: 600px;
     width: 100%;
 }
-
+@media screen and (max-width: 768px){
+    .metadatos-container{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+}
 /************************************
 NORMAS  
 ************************************/
@@ -224,7 +306,34 @@ NORMAS
     max-width: 600px;
     width: 100%;
 }
-
+.body-scroll{
+    padding: 10px 0;
+    display: block; 
+    height: 380px; 
+    overflow: auto;
+    background-color: #E2E8FF;
+}
+.cuerpo{
+    font-size: 15px;
+}
+.body-scroll .cat{
+    padding: 0 15px;
+}
+.body-scroll .cat p{
+    text-align: left;
+}
+.body-scroll td img{
+    padding: 0px 76px;
+}
+.cat .nombre{
+    color: #02349C;
+}
+@media screen and (max-width: 768px){
+    .normas-container{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+}
 
 /************************************
 capas  
@@ -260,13 +369,23 @@ capas
     max-width: 600px;
     width: 100%;
 }
-
+.capa img {
+    width: 100%;
+    max-width: 350px;
+}
+@media screen and (max-width: 768px){
+    .capas-container{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+}
 /************************************
 GEO
 ************************************/
 .geo-container{
     text-align: justify; 
-    padding: 70px 10px;
+    padding: 50px 10px;
+    padding-bottom: 70px;
     justify-content: center;
 }
 .geo-titulo{
@@ -290,7 +409,15 @@ GEO
     max-width: 600px;
     width: 100%;
 }
-
+.geos img {
+    width: 100%;
+    max-width: 350px;
+}
+@media screen and (max-width: 768px){
+    .geo-container{
+        padding: 50px;
+    }
+}
 /************************************
 FOOTER
 ************************************/
