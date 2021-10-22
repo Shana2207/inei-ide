@@ -66,7 +66,25 @@ BOTONES
 /************************************
 TABLAS  
 ************************************/
-
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+.cabecera{
+    background-color: #02349C;
+    color: #fff;
+    border-radius: 20px;
+    display: block;
+}
+.cabecera td{
+    padding: 10px;
+}
+.body{
+    display: block;
+}
+.body td{
+    padding: 10px;
+}
 
 
 /************************************
