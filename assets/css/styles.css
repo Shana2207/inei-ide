@@ -30,6 +30,11 @@ p{
 img{
     height: fit-content;
 }
+@media screen and (max-width: 360px){
+    h2{
+        font-size: 20px;
+    }
+}
 /************************************
 BOTONES  
 ************************************/
@@ -38,6 +43,8 @@ BOTONES
     padding-bottom: 0;
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .btn-meta{
     color: #ffffff;
@@ -50,6 +57,7 @@ BOTONES
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 .btn-meta img{
     width: 30px;
@@ -119,6 +127,11 @@ table{
 .extra{
     padding-right: 50px;
 }
+@media screen and (max-width: 905px){
+    .extra{
+        padding-right: 0;
+    }
+}
 .lines a:hover{
     color: #4D4D4D;
 }
@@ -131,6 +144,152 @@ table{
 }
 .lines a p{
     margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+.fondo{
+    max-width: 100%;
+    background: url(../img/header/fondo.png) no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+}
+.header-container-logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    padding: 50px 10px;
+    padding-top: 50px;
+}
+.texto{
+    width: 60%;
+}
+.texto h1{
+    color: #02528F;
+    font-weight: bold;
+}
+.texto p{
+    text-align: justify;
+}
+.mapa img{
+    width: 100%;
+}
+.nav{
+    background-color: #E2E8FF;
+    padding: 10px;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.seccion{
+    width: 20%;
+}
+.seccion img{
+    width: 40px;
+}
+.seccion a{
+    margin: 0;
+    text-decoration: none;
+}
+.seccion a:hover{
+    color: #30406E;
+}
+.seccion a:visited{
+    color: #30406E;
+}
+.seccion a p{
+    margin: 0;
+}
+
+.nav1{
+    background-color: #02349C;
+    z-index: 9;
+    width: 100%;
+}
+.nav1 p{
+    color: #fff;
+    font-size: 9px;
+}
+.seccion1{
+    width: 20%;
+}
+.seccion1 img{
+    width: 40px;
+}
+.seccion1 a{
+    margin: 0;
+    text-decoration: none;
+}
+.seccion1 a:hover{
+    color: #30406E;
+}
+.seccion1 a:visited{
+    color: #30406E;
+}
+.seccion1 a p{
+    margin: 0;
+}
+.ventana{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fixed{position:fixed; top:0}
+.logos-ventana img{
+    padding: 0 10px;
+}
+@media screen and (max-width: 768px){
+    .header-container{
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 850px){
+    .texto{
+        width: 100%;
+    }
+    .logos-ventana{
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+    }
+    .nav-container{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+    }
+    .seccion{
+        width: 150px;
+        max-width: 100%;
+    }
 }
 
 
@@ -423,6 +582,9 @@ FOOTER
 ************************************/
 footer{
     background-color: #51464B;
+    
+}
+.footer-container{
     padding: 20px;
 }
 footer p{

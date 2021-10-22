@@ -14,8 +14,66 @@
     <script src="https://kit.fontawesome.com/8ad784097e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
-    <main>
+    
+    <header class="header">
+        <div class="fondo">
+            <div class="container">
+                <div class="header-container">
+                    <div class="texto">
+                        <div class="header-container-logos">
+                            <img src="assets/img/header/inei-color.png" alt="">
+                            <img src="assets/img/header/cm-header.png" alt="">
+                        </div>
+                        <h1>PORTAL <br>
+                            INFRAESTRUCTURA DE <br>
+                            <span style="color: #02349C; font-weight: 800;">DATOS ESPACIALES INEI</span></h1>
+                        <p>
+                            El presente geoportal tiene como objetivo promover el uso y diseminación de la información geoespacial relevante, para la planificación, el desarrollo sostenible y el impulso de las Infraestructuras de Datos Espaciales. Ofrecemos a nuestros usuarios el acceso a aplicaciones y servicios para encontrar, compartir, procesar y utilizar de manera gratuita e interactiva la información.
+                        </p>
+                    </div>
+                    <div class="mapa">
+                        <img src="assets/img/header/mapa.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="container">
+                    <div class="nav-container">
+                        <div class="seccion">
+                            <a href="#servicios">
+                                <img src="assets/img/header/servicios.png" alt="">
+                                <p>SERVICIOS WMS & SERVICIOS WFS</p>
+                            </a>
+                        </div>
+                        <div class="seccion">
+                            <a href="#metadatos">
+                                <img src="assets/img/header/metadatos.png" alt="">
+                                <p>CATALOGO DE METADATOS</p>
+                            </a>
+                        </div>
+                        <div class="seccion">
+                            <a href="">
+                                <img src="assets/img/header/normas.png" alt="">
+                                <p>NORMAS TÉCNICAS</p>
+                            </a>
+                        </div>
+                        <div class="seccion">
+                            <a href="#capas">
+                                <img src="assets/img/header/carto.png" alt="">
+                                <p>DESCARGA DE CAPAS CARTOGRÁFICAS</p>
+                            </a>
+                            
+                        </div>
+                        <div class="seccion">
+                            <a href="#geo">
+                                <img src="assets/img/header/geo.png" alt="">
+                                <p>GEODATOS PERÚ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section>
             <div class="consulta">
                 <div class="container">
@@ -40,7 +98,51 @@
                 </div>
             </div>
         </section>
-        <section>
+    </header>
+    <main>
+        <div class="nav1" id="nav1">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logos-ventana">
+                        <img src="assets/img/footer/inei.png" alt="" style="width: 100px;">
+                        <img src="assets/img/header/cm-header.png" alt="" style="width: 150px;">
+                    </div>
+                    <div class="ventana">
+                        <div class="seccion1">
+                            <a href="#servicios">
+                                <img src="assets/img/header/servicios-blanco.png" alt="">
+                                <p>SERVICIOS WMS & SERVICIOS WFS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#metadatos">
+                                <img src="assets/img/header/metadatos-blanco.png" alt="">
+                                <p>CATALOGO DE METADATOS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="">
+                                <img src="assets/img/header/normas-blanco.png" alt="">
+                                <p>NORMAS TÉCNICAS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#capas">
+                                <img src="assets/img/header/carto-blanco.png" alt="">
+                                <p>DESCARGA DE CAPAS CARTOGRÁFICAS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#geo">
+                                <img src="assets/img/header/geo-blanco.png" alt="">
+                                <p>GEODATOS PERÚ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="servicios">
             <div class="container">
                 <div class="servicio-container">
                     <div class="servicios">
@@ -101,7 +203,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="metadatos">
             <div class="container">
                 <div class="metadatos-container">
                     <div class="metadatos">
@@ -127,6 +229,7 @@
                 </div>
             </div>
         </section>
+        <!--
         <section>
             <div class="container">
                 <div class="normas-container">                
@@ -166,8 +269,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section>-->
+        <section id="capas">
             <div class="container">
                 <div class="capas-container">
                     <div class="capas">
@@ -211,7 +314,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="geo">
             <div class="container">
                 <div class="geo-container">                
                     <div class="geo">
@@ -235,13 +338,19 @@
         </section>
     </main>
     <footer>
-        <div class="logos">
-            <img src="assets/img/footer/inei.png" alt="" style="width: 150px;">
-            <img src="assets/img/footer/cm.png" alt="">
+        <div class="container">
+            <div class="footer-container">
+                <div class="logos">
+                    <img src="assets/img/footer/inei.png" alt="" style="width: 150px;">
+                    <img src="assets/img/footer/cm.png" alt="">
+                </div>
+                <p>Av. Gral. Garzón 654 - 658, Jesús María Lima - Perú <br>
+                    Teléfono: 652 0000 / 203 2640  <br>
+                    infoinei@inei.gob.pe   </p>
+            </div>
         </div>
-        <p>Av. Gral. Garzón 654 - 658, Jesús María Lima - Perú <br>
-            Teléfono: 652 0000 / 203 2640  <br>
-            infoinei@inei.gob.pe   </p>
     </footer>
 </body>
+    <script src="assets/js/header.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </html>
