@@ -132,6 +132,13 @@ table{
     .extra{
         padding-right: 0;
     }
+    .cabecera td{
+        padding: 0;
+    }
+    .lines{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .lines a:hover{
     color: #4D4D4D;
@@ -146,6 +153,12 @@ table{
 .lines a p{
     margin: 0;
 }
+.tabla1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 /*header*/
 .fondo{
@@ -254,6 +267,21 @@ table{
     .header-container{
         padding: 50px;
     }
+    .texto h1{
+        font-size: 20px;
+    }
+    .body-scroll td img {
+        padding: 0 !important;
+    }
+    .cuerpo{
+        font-size: 10px !important;
+    }
+    .body-scroll .cat {
+        padding: 0px 5px !important;
+    }
+    .body-scroll .cat p {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 850px){
     .texto{
@@ -288,6 +316,20 @@ GIS
     background: url(../img/gis/fondo1.png) no-repeat center center;
     background-size: cover;
     justify-content: center;
+}
+.consulta-container{
+    text-align: justify; 
+    padding: 50px 10px;
+    padding-bottom: 0;
+    justify-content: center;
+}
+.consultas{
+    text-align: justify; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
 }
 .consulta h2{
     text-align: left;
@@ -414,6 +456,9 @@ METADATOS
         padding: 50px;
         padding-bottom: 0;
     }
+    .meta-img img{
+        width: 100%;
+    }
 }
 /************************************
 NORMAS  
@@ -450,12 +495,18 @@ NORMAS
     width: 100%;
 }
 .body-scroll{
+    padding-top: 5px;
     padding: 10px 0;
     display: block; 
     height: 380px; 
     overflow: auto;
     background-color: #E2E8FF;
 }
+.body-scroll::-webkit-scrollbar {
+    background-color: #ccc;    
+    border-radius: 10px; 
+    width: 5px;
+  }
 .cuerpo{
     font-size: 15px;
 }
